@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'Yodo1Tapjoy'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = '2017.6.29更新Tapjoy V11.11.0,解决屏幕适配的问题（UnityAds冲突）'
     s.description      = <<-DESC
     TODO: Add long description of the pod here.
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
-    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :branch => 'tapjoy' }
+    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'Tapjoy1.0.1' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '7.0'
