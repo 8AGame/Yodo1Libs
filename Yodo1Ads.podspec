@@ -60,7 +60,5 @@ Pod::Spec.new do |s|
     s.dependency 'Yodo1AdsUnityAds'
     s.dependency 'Yodo1AdsVungle'
     s.dependency 'Yodo1AdsYouMi'
-    s.dependency 'Yodo1Tapjoy'
-    s.dependency 'Yodo1YouMi'
 
 end
