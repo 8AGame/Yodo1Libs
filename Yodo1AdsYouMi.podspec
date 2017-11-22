@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
-    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'YouMi'+s.version }
+    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'YouMi1.0.0' }
 
     s.ios.deployment_target = '7.0'
 
