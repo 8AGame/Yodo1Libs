@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-    s.name             = 'Yodo1Tapjoy'
+    s.name             = 'Yodo1AdsTapjoy'
     s.version          = '1.0.1'
     s.summary          = '2017.6.29更新Tapjoy V11.11.0,解决屏幕适配的问题（UnityAds冲突）'
     s.description      = <<-DESC
