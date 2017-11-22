@@ -1,0 +1,37 @@
+//
+//  Yodo1UnityTool.m
+//
+
+#import "Yodo1UnityTool.h"
+
+#ifndef UNITY3D
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+#if UNITY_VERSION < 500
+    void UnityPause(bool pause) {}
+    #else
+    void UnityPause(int pause){}
+    #endif
+    void UnitySendMessage(const char* obj, const char* method, const char* msg) {}
+    
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
+NSString* Yodo1CreateNSString(const char* string)
+{
+    return string ? [NSString stringWithUTF8String:string] : [NSString stringWithUTF8String:""];
+}
+
+char* Yodo1MakeStringCopy(const char* string)
+{
+    if (string == NULL)
+        return NULL;
+    char* res = (char*)malloc(strlen(string) + 1);
+    strcpy(res, string);
+    return res;
+}
