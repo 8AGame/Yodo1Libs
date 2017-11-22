@@ -1,29 +1,29 @@
 Pod::Spec.new do |s|
     s.name             = 'Yodo1Tapjoy'
-    s.version          = '1.0.4'
+    s.version          = '1.0.0'
     s.summary          = '2017.6.29更新Tapjoy V11.11.0,解决屏幕适配的问题（UnityAds冲突）'
     s.description      = <<-DESC
     TODO: Add long description of the pod here.
                        DESC
-    tags               = 'Yodo1Tapjoy_1_0_4'
+    tags               = 'Yodo1Tapjoy'
     s.homepage         = 'http://git.yodo1.cn/'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-    s.license          = { :type => 'MIT', :file => tags + '/LICENSE' }
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
-    s.source           = { :http => 'http://download.sdk.yodo1.cn/iOSLib/' + tags + '.zip' }
+    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :branch => 'tapjoy' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '7.0'
 
-    s.source_files = tags + '/Classes/Tapjoy.framework/Versions/A/Headers/*.h'
+    s.source_files = tags + '/Tapjoy.framework/Versions/A/Headers/*.h'
 
-    s.public_header_files = tags + '/Classes/Tapjoy.framework/Versions/A/Headers/*.h'
+    s.public_header_files = tags + '/Tapjoy.framework/Versions/A/Headers/*.h'
 
-    s.resources = tags + '/Classes/Resources/*.*'
+    s.resources = tags + '/Resources/*.*'
     
-    s.preserve_path = tags + '/ChangeLog.txt'
+    s.preserve_path = 'ChangeLog.txt'
     
-    s.vendored_frameworks = tags + '/Classes/Tapjoy.framework'
+    s.vendored_frameworks = tags + '/Tapjoy.framework'
 
     s.requires_arc = false
 
