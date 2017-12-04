@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
 
     s.public_header_files = tags + '/GoogleMobileAds.framework/Headers/**/*.h'
 
-    s.preserve_path = 'ChangeLog.txt'
+    s.preserve_path = 'ChangeLog.txt',tags + '/GoogleMobileAds.framework'
 
     s.requires_arc = true
 
