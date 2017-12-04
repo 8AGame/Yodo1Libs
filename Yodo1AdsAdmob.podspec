@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '8.0'
 
-    s.source_files = tags + '/GoogleMobileAds.framework/Headers/*.h'
+    s.source_files = tags + '/GoogleMobileAds.framework/Headers/**/*.h'
 
-    s.public_header_files = tags + '/GoogleMobileAds.framework/Headers/*.h'
+    s.public_header_files = tags + '/GoogleMobileAds.framework/Headers/**/*.h'
 
     s.preserve_path = 'ChangeLog.txt'
 
