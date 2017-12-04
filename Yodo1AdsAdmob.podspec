@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
     s.vendored_frameworks = tags + '/GoogleMobileAds.framework'
 
-    s.frameworks = 'AudioToolbox', 'AVFoundation','CoreGraphics', 'CoreMedia','CoreMotion', 'CoreTelephony' ,'CoreVideo', 'GLKit','MediaPlayer', 'MessageUI', 'MobileCoreServices','OpenGLES', 'StoreKit' ,'SystemConfiguration'
+    s.frameworks = 'AudioToolbox', 'AVFoundation','CoreGraphics', 'CoreMedia','CoreMotion', 'CoreTelephony' ,'CoreVideo', 'GLKit','MediaPlayer', 'MessageUI', 'MobileCoreServices','OpenGLES','Security','StoreKit' ,'SystemConfiguration'
 
     s.weak_frameworks = 'AdSupport','SafariServices','JavaScriptCore','WebKit'
 
