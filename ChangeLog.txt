@@ -1,8 +1,6 @@
 =============================================
-V1.0.7— 2017-10-10
-1.GoogleMobileAds V7.24.1
-Updates the way the SDK interacts with Apple's StoreServices.
-Official release for iOS 11 support.
+V1.0.7— 2017-12-01
+1.GoogleMobileAds V7.26.0
 
 =============================================
 V1.0.6— 2017-09-18
