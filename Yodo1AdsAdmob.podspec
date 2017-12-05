@@ -13,11 +13,11 @@ Pod::Spec.new do |s|
     s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'Admob1.0.4' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-    s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '7.0'
 
-    #s.source_files = tags + '/GoogleMobileAds.framework/Headers/**/*.h'
+    s.source_files = tags + '/GoogleMobileAds.framework/Headers/**/*.h'
 
-    #s.public_header_files = tags + '/GoogleMobileAds.framework/Headers/**/*.h'
+    s.public_header_files = tags + '/GoogleMobileAds.framework/Headers/**/*.h'
 
     s.preserve_path = 'ChangeLog.txt'
 
