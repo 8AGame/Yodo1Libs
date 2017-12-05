@@ -56,7 +56,7 @@ typedef NS_ENUM(unsigned int, CSVideoStatus) {
           andDownloadVideoOnlyWifi:(BOOL)onlyWifi;
 
 /**
- *	@brief	展现视频广告
+ *    @brief    展现视频广告
  *
  *  @param portrait 视频广告方向
  */
@@ -94,6 +94,12 @@ typedef NS_ENUM(unsigned int, CSVideoStatus) {
 
 // 视频广告关闭
 - (void)csVideoADClosed:(CSVideoAD *)csVideoAD;
+
+// 互动页展示
+- (void)csVideoADInteractPageShow:(CSVideoAD *)csVideoAD;
+
+// 互动页关闭
+- (void)csVideoADInteractPageClose:(CSVideoAD *)csVideoAD;
 
 @end
 #endif

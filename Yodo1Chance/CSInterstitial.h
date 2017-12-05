@@ -143,10 +143,10 @@ loadAdFailureWithError:(CSError *)csError;
 // 插屏广告关闭完成
 - (void)csInterstitialDidDismissScreen:(CSInterstitial *)csInterstitial;
 
-// 试玩页展示
+// 互动页展示
 - (void)csInterstitialInteractPageShow:(CSInterstitial *)csInterstitial;
 
-// 试玩页关闭
+// 互动页关闭
 - (void)csInterstitialInteractPageClose:(CSInterstitial *)csInterstitial;
 
 @end

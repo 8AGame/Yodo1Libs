@@ -65,5 +65,11 @@ typedef void (^CSNativeFeedsRequestFailure)(CSError *error);
 - (void)csNativeFeeds:(CSNativeFeeds *)nativeFeeds
          loadFinished:(CSNativeFeedsView *)nativeFeedsView;
 
+// 互动页展示
+- (void)csNativeFeedsInteractPageShow:(CSNativeFeeds *)nativeFeeds;
+
+// 互动页关闭
+- (void)csNativeFeedsInteractPageClose:(CSNativeFeeds *)nativeFeeds;
+
 @end
 #endif

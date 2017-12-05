@@ -30,7 +30,7 @@
 + (CSSplashAd *)sharedInstance;
 
 // 显示开屏广告
-- (BOOL)showSplashInWindow:(UIWindow *)window;
+- (BOOL)showSplashInWindow:(UIWindow *)window andDownloadVideoOnlyWifi:(BOOL)onlyWifi;
 
 @end
 
@@ -47,6 +47,12 @@
 
 // 开屏广告关闭完成
 - (void)csSplashAdCloseFinished:(CSSplashAd *)splashAd;
+
+// 互动页展示
+- (void)csSplashAdInteractPageShow:(CSSplashAd *)splashAd;
+
+// 互动页关闭
+- (void)csSplashAdInteractPageClose:(CSSplashAd *)splashAd;
 
 @end
 #endif

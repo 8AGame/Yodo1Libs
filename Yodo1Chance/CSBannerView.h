@@ -66,10 +66,10 @@ typedef void (^CSBannerDidDismiss)();
 // 移除Banner广告
 - (void)csBannerViewDidDismissScreen:(CSBannerView *)csBannerView;
 
-// 试玩页展示
+// 互动页展示
 - (void)csBannerViewInteractPageShow:(CSBannerView *)csBannerView;
 
-// 试玩页关闭
+// 互动页关闭
 - (void)csBannerViewInteractPageClose:(CSBannerView *)csBannerView;
 
 @end
