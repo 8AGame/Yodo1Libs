@@ -12,7 +12,8 @@
 
 
 // SDK_Version仅供参考，以[ChanceAd sdkVersion];得到的版本号为准
-#define SDK_Version  @"7.2.1"
+#define SDK_Version  @"6.4.3"
+#define Key_UseHttps    @"UseHttps"
 
 
 @interface ChanceAd : NSObject

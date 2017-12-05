@@ -1,6 +1,6 @@
 //
 //  CSADRequest.h
-//  ChanceAdSDK
+//  CSADSDK
 //
 //  Created by Chance_yangjh on 13-11-4.
 //  Copyright (c) 2013年 Chance. All rights reserved.

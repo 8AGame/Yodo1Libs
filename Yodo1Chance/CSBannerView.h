@@ -1,6 +1,6 @@
 //
 //  CSBannerView.h
-//  ChanceAdSDK
+//  CSADSDK
 //
 //  Created by cassano on 13-10-14.
 //  Copyright (c) 2013年 Chance. All rights reserved.
@@ -27,8 +27,6 @@ typedef void (^CSBannerDidDismiss)();
 // iPhone和iPod Touch的Banner广告大小为320x50.
 // iPad的Banner广告大小为728x90.
 @interface CSBannerView : UIView
-
-@property (nonatomic, weak) UIViewController *rootViewController;
 
 @property (nonatomic, weak) id <CSBannerViewDelegate> delegate;
 
@@ -65,12 +63,6 @@ typedef void (^CSBannerDidDismiss)();
 
 // 移除Banner广告
 - (void)csBannerViewDidDismissScreen:(CSBannerView *)csBannerView;
-
-// 互动页展示
-- (void)csBannerViewInteractPageShow:(CSBannerView *)csBannerView;
-
-// 互动页关闭
-- (void)csBannerViewInteractPageClose:(CSBannerView *)csBannerView;
 
 @end
 #endif

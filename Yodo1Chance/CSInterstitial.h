@@ -1,6 +1,6 @@
 //
 //  CSInterstitial.h
-//  ChanceAdSDK
+//  CSADSDK
 //
 //  Created by Chance_yangjh on 13-10-28.
 //  Copyright (c) 2013年 Chance. All rights reserved.
@@ -57,8 +57,6 @@ typedef void (^CSInterstitialDidDismiss)();
 @property (nonatomic, readonly) CSInterstitialStatus status;
 // 插屏广告尺寸
 @property (nonatomic, readonly) CGSize interstitialSize;
-
-@property (nonatomic, weak) UIViewController *rootViewController;
 // 插屏广告回调代理
 @property (nonatomic, weak) id <CSInterstitialDelegate> delegate;
 
@@ -84,23 +82,25 @@ typedef void (^CSInterstitialDidDismiss)();
 - (void)loadInterstitial;
 
 /**
- *	@brief	显示插屏广告
+ *	@brief	显示插屏广告，带动画的弹出
  */
 - (void)showInterstitial;
 
 /**
- *	@brief	显示插屏广告 from 6.4.3
+ *	@brief	显示插屏广告
  *
  *	@param 	viewController 	显示插屏广告用的UIViewController
+ *	@param 	animation 	是否动画展现
  */
-- (void)showInterstitial:(UIViewController *)viewController;
+- (void)showInterstitial:(UIViewController *)viewController animation:(BOOL)animation;
 
 /**
  *	@brief	显示插屏广告
  *
  *	@param 	rootView 	插屏广告的父视图
+ *	@param 	animation 	是否动画展现
  */
-- (void)showInterstitialOnRootView:(UIView *)rootView;
+- (void)showInterstitialOnRootView:(UIView *)rootView animation:(BOOL)animation;
 
 /**
  *	@brief	用插屏广告填充view
@@ -142,12 +142,6 @@ loadAdFailureWithError:(CSError *)csError;
 
 // 插屏广告关闭完成
 - (void)csInterstitialDidDismissScreen:(CSInterstitial *)csInterstitial;
-
-// 互动页展示
-- (void)csInterstitialInteractPageShow:(CSInterstitial *)csInterstitial;
-
-// 互动页关闭
-- (void)csInterstitialInteractPageClose:(CSInterstitial *)csInterstitial;
 
 @end
 #endif

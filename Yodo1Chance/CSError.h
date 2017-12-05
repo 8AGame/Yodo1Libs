@@ -1,6 +1,6 @@
 //
 //  CSError.h
-//  ChanceAdSDK
+//  CSADSDK
 //
 //  Created by Chance_yangjh on 13-11-1.
 //  Copyright (c) 2013年 Chance. All rights reserved.

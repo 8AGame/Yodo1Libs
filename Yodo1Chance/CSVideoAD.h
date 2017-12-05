@@ -11,13 +11,6 @@
 #import <Foundation/Foundation.h>
 #import "CSError.h"
 
-typedef NS_ENUM(unsigned int, CSVideoEvent) {
-    CSVideoEvent_ExitWhenLoading, // 视频广告加载过程中的退出播放
-    CSVideoEvent_FileError, // 视频广告因视频文件错误导致的取消播放
-    CSVideoEvent_ShowFailed, // 视频广告展现失败
-    CSVideoEvent_ShowSuccess, // 视频广告展现成功，即开始播放视频广告
-    CSVideoEvent_ClickCloseButton, // 提前点击关闭按钮
-};
 
 typedef NS_ENUM(unsigned int, CSVideoStatus) {
     CSVideoStatus_None,
@@ -40,8 +33,6 @@ typedef NS_ENUM(unsigned int, CSVideoStatus) {
 // 服务器对接时，积分回调时转发的信息。长度限制80（不建议使用中文符号）
 @property (nonatomic, copy) NSString *userInfo;
 
-@property (nonatomic, weak) UIViewController *rootViewController;
-
 @property (nonatomic, weak) id <CSVideoADDelegate> delegate;
 
 + (CSVideoAD *)sharedInstance;
@@ -49,16 +40,16 @@ typedef NS_ENUM(unsigned int, CSVideoStatus) {
 /**
  *  加载视频广告
  *
- *  @param portrait 视频广告方向
+ *  @param portrait 视频广告方向（YES表示竖屏播放视频，NO表示横屏播放视频。app本身支持竖屏才能用YES，app本身支持横屏才能用NO）
  *  @param onlyWifi 是否只在wifi情况下预加载视频文件
  */
 - (void)loadVideoADWithOrientation:(BOOL)portrait
           andDownloadVideoOnlyWifi:(BOOL)onlyWifi;
 
 /**
- *    @brief    展现视频广告
+ *	@brief	展现视频广告
  *
- *  @param portrait 视频广告方向
+ *  @param portrait 视频广告方向（YES表示竖屏播放视频，NO表示横屏播放视频。app本身支持竖屏才能用YES，app本身支持横屏才能用NO）
  */
 - (void)showVideoADWithOrientation:(BOOL)portrait;
 
@@ -83,8 +74,20 @@ typedef NS_ENUM(unsigned int, CSVideoStatus) {
 // 返回YES表示播放视频广告，返回NO表示暂不播放。未实现按YES处理
 - (BOOL)csVideoADWillPlayVideoAD:(CSVideoAD *)csVideoAD;
 
-// 播放事件回调（event事件参考枚举,replay为YES表示重播）
-- (void)csVideoAD:(CSVideoAD *)csVideoAD event:(CSVideoEvent)csVideoEvent replay:(BOOL)replay error:(NSError *)csError;
+// 视频广告加载过程中的退出播放
+- (void)csVideoADExitPlayWhenLoading:(CSVideoAD *)csVideoAD;
+
+// 视频广告因视频文件错误导致的取消播放
+- (void)csVideoAD:(CSVideoAD *)csVideoAD cancelPlayWithError:(NSError *)error;
+
+// 视频广告展现失败
+- (void)csVideoAD:(CSVideoAD *)csVideoAD showVideoADError:(CSError *)csError;
+
+// 视频广告展现成功，即开始播放视频广告
+- (void)csVideoAD:(CSVideoAD *)csVideoAD showVideoADSuccess:(BOOL)replay;
+
+// 点击视频广告的关闭按钮（close为YES表示广告会被关闭）
+- (void)csVideoAD:(CSVideoAD *)csVideoAD clickCloseButtonAndWillClose:(BOOL)close;
 
 // 视频广告播放完成（广告不会自动关闭）（replay为YES表示重播）
 - (void)csVideoAD:(CSVideoAD *)csVideoAD playVideoFinished:(BOOL)replay;
@@ -95,12 +98,5 @@ typedef NS_ENUM(unsigned int, CSVideoStatus) {
 // 视频广告关闭
 - (void)csVideoADClosed:(CSVideoAD *)csVideoAD;
 
-// 互动页展示
-- (void)csVideoADInteractPageShow:(CSVideoAD *)csVideoAD;
-
-// 互动页关闭
-- (void)csVideoADInteractPageClose:(CSVideoAD *)csVideoAD;
-
 @end
 #endif
-
