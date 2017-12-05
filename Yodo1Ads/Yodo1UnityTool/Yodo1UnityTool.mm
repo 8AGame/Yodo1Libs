@@ -4,7 +4,11 @@
 
 #import "Yodo1UnityTool.h"
 
-#ifndef UNITY3D
+#define      UNITY_PROJECT    0
+
+#if UNITY_PROJECT
+/// Unity3d引擎 项目
+#else
 
 #ifdef __cplusplus
 extern "C" {

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = 'Yodo1Advertisement'
-    s.version          = '1.0.3'
-    s.summary          = '2017.11.22 Yodo1Ads v1.0.1'
+    s.version          = '1.0.5'
+    s.summary          = '2017.12.05 Yodo1Ads v1.0.5'
     s.description      = <<-DESC
     TODO: Add long description of the pod here.
                        DESC
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
-    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'Yodo1Ads1.0.3' }
+    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'Yodo1Ads1.0.5' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '8.0'
