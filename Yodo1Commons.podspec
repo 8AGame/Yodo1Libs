@@ -13,18 +13,18 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
-    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'Yodo1Commons1.0.0'}
+    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => "#{s.name}" +"#{s.version}" }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '7.0'
 
-    s.source_files = '#{s.name}' + '/*.{h,m,mm}'
+    s.source_files = "#{s.name}" + "/*.{h,m,mm}"
     
-    s.public_header_files = '#{s.name}' + '/*.h'
+    s.public_header_files = "#{s.name}" + '/*.h'
 
-    s.resources = '#{s.name}' + '/Yodo1SDKStrings.bundle'
+    s.resources = "#{s.name}" + '/Yodo1SDKStrings.bundle'
     
-    s.vendored_libraries = '#{s.name}' + '/*.a'
+    s.vendored_libraries = "#{s.name}" + '/*.a'
 
     s.libraries = 'sqlite3', 'z', 'stdc++'
     s.compiler_flags = '-Dunix'
