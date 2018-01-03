@@ -39,5 +39,5 @@ Pod::Spec.new do |s|
 
     s.dependency 'Yodo1Video','2.0.1'
 
-    s.dependency 'Yodo1Domob','1.0.4'
+    s.dependency 'Yodo1AdsDomob','1.0.5'
 end
