@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                        DESC
 
     tags               = "#{s.name}"
-    s.homepage         = 'http://git.yodo1.cn'
+    s.homepage         = 'https://github.com'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
@@ -17,8 +17,12 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '8.0'
 
     s.source_files = tags + '/*.h'
+    
     s.public_header_files = tags + '/*.h'
+    
     s.preserve_path = 'ChangeLog.txt'
+    
+    s.vendored_libraries = tags + '/*.a'
 
     s.xcconfig = {
         'OTHER_LDFLAGS' => '-ObjC',
