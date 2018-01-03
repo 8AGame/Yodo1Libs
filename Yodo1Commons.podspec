@@ -11,9 +11,9 @@ Pod::Spec.new do |s|
 
     s.homepage         = 'http://git.yodo1.cn/Yodo1sdk/Yodo1Commons.git'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-    s.license          = { :type => 'MIT', :file => tags + '/LICENSE' }
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
-    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => '#{s.name}' +'#{s.version}' }
+    s.source           = { :git => "https://github.com/8AGame/Yodo1Libs.git", :tag => 'Yodo1Commons' +'#{s.version}' }
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
     s.ios.deployment_target = '7.0'
