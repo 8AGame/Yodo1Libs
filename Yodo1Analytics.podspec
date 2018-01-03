@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
     
     s.vendored_libraries = tags + '/*.a'
     
-    s.preserve_paths = tags + '/ChangeLog.txt'
+    s.preserve_paths = 'ChangeLog.txt'
     
     s.requires_arc = true
     
