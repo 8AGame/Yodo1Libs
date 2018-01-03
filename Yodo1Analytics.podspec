@@ -9,7 +9,7 @@ TODO: Add long description of the pod here.
     
     tags               = "#{s.name}"
                     
-    s.homepage         = 'http://git.yodo1.cn/huangyixian/Yodo1Analytics.git'
+    s.homepage         = 'http://git.yodo1.cn/'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
