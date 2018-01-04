@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
     s.dependency 'Yodo1Qrencode', '1.0.1'
 
     s.dependency 'Yodo1QQSDK','1.0.2'
-    s.dependency 'Yodo1WeChatSDK','1.0.2'
+    s.dependency 'Yodo1WeChatSDK','1.0.3'
     s.dependency 'Yodo1WeiboSDK','1.0.2'
     s.dependency 'Yodo1FBSDKCoreKit','1.0.2'
     s.dependency 'Yodo1TwitterKit','1.0.2'
