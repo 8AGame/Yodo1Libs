@@ -34,6 +34,6 @@ Pod::Spec.new do |s|
     }
 
     s.frameworks = 'UIKit'
-    s.dependency 'Yodo1Banner','2.0.0'
+    s.dependency 'Yodo1Banner','2.0.1'
     s.dependency 'Yodo1AdsAdview','1.0.1'
 end
