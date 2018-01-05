@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = 'Yodo1Manager'
-    s.version          = '2.0.2'
-    s.summary          = 'v2.0.2- 2018-1-4
+    s.version          = '2.0.3'
+    s.summary          = 'v2.0.3- 2018-1-4
                           1、更新到Github
                           '
     s.description      = <<-DESC
