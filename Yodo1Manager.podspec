@@ -387,7 +387,7 @@ Pod::Spec.new do |s|
 
     ######## Supersonic Video ########
 
-    s.subspec 'Video_SUApplovin' do |ss|
+    s.subspec 'Video_ISApplovin' do |ss|
         ss.xcconfig = {
             "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
         }
@@ -396,58 +396,58 @@ Pod::Spec.new do |s|
         ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
     end
 
-    # s.subspec 'Video_ISChartboost' do |ss|
-    #     ss.xcconfig = {
-    #         "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
-    #     }
-    #     ss.dependency 'VideoISChartboost','2.0.1'
-    #     ss.dependency 'Yodo1Video', Yodo1VideoVersion
-    #     ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
-    # end
+    s.subspec 'Video_ISChartboost' do |ss|
+        ss.xcconfig = {
+            "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
+        }
+        ss.dependency 'VideoISChartboost','2.0.1'
+        ss.dependency 'Yodo1Video', Yodo1VideoVersion
+        ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
+    end
 
-    # s.subspec 'Video_ISUnityAds' do |ss|
-    #     ss.xcconfig = {
-    #         "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
-    #     }
-    #     ss.dependency 'VideoISUnityAds','2.0.1'
-    #     ss.dependency 'Yodo1Video', Yodo1VideoVersion
-    #     ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
-    # end
+    s.subspec 'Video_ISUnityAds' do |ss|
+        ss.xcconfig = {
+            "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
+        }
+        ss.dependency 'VideoISUnityAds','2.0.1'
+        ss.dependency 'Yodo1Video', Yodo1VideoVersion
+        ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
+    end
 
-    # s.subspec 'Video_ISVungle' do |ss|
-    #     ss.xcconfig = {
-    #         "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
-    #     }
-    #     ss.dependency 'VideoISVungle','2.0.1'
-    #     ss.dependency 'Yodo1Video', Yodo1VideoVersion
-    #     ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
-    # end
+    s.subspec 'Video_ISVungle' do |ss|
+        ss.xcconfig = {
+            "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
+        }
+        ss.dependency 'VideoISVungle','2.0.1'
+        ss.dependency 'Yodo1Video', Yodo1VideoVersion
+        ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
+    end
 
-    # s.subspec 'Video_ISTapjoy' do |ss|
-    #     ss.xcconfig = {
-    #         "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
-    #     }
-    #     ss.dependency 'VideoISTapjoy','2.0.1'
-    #     ss.dependency 'Yodo1Video', Yodo1VideoVersion
-    #     ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
-    # end
+    s.subspec 'Video_ISTapjoy' do |ss|
+        ss.xcconfig = {
+            "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
+        }
+        ss.dependency 'VideoISTapjoy','2.0.1'
+        ss.dependency 'Yodo1Video', Yodo1VideoVersion
+        ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
+    end
 
-    # s.subspec 'Video_ISFacebook' do |ss|
-    #     ss.xcconfig = {
-    #         "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
-    #     }
-    #     ss.dependency 'VideoISFacebook','2.0.1'
-    #     ss.dependency 'Yodo1Video', Yodo1VideoVersion
-    #     ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
-    # end
+    s.subspec 'Video_ISFacebook' do |ss|
+        ss.xcconfig = {
+            "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
+        }
+        ss.dependency 'VideoISFacebook','2.0.1'
+        ss.dependency 'Yodo1Video', Yodo1VideoVersion
+        ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
+    end
 
-    # s.subspec 'Video_ISAdColony' do |ss|
-    #     ss.xcconfig = {
-    #         "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
-    #     }
-    #     ss.dependency 'VideoISAdColony','2.0.1'
-    #     ss.dependency 'Yodo1Video', Yodo1VideoVersion
-    #     ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
-    # end
+    s.subspec 'Video_ISAdColony' do |ss|
+        ss.xcconfig = {
+            "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
+        }
+        ss.dependency 'VideoISAdColony','2.0.1'
+        ss.dependency 'Yodo1Video', Yodo1VideoVersion
+        ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
+    end
 
 end
