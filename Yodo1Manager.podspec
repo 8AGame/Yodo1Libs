@@ -385,6 +385,7 @@ Pod::Spec.new do |s|
     end
 
     ######## Supersonic Video ########
+    
     s.subspec 'Video_ISApplovin' do |ss|
         ss.xcconfig = {
             "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
