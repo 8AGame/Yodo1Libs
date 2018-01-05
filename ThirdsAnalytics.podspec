@@ -9,7 +9,7 @@ TODO: Add long description of the pod here.
     
     tags               = "#{s.name}"    
                     
-    s.homepage         = 'http://git.yodo1.cn/huangyixian/Yodo1Analytics.git'
+    s.homepage         = 'https://github.com'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'yixian huang' => 'huangyixian@yodo1.com' }
@@ -44,5 +44,6 @@ TODO: Add long description of the pod here.
     s.dependency 'Yodo1MobClick','1.0.1'
     s.dependency 'Yodo1GameAnalytics','1.0.1'
     s.dependency 'Yodo1KeyInfo','2.0.1'
+    s.dependency 'Yodo1OnlineParameter','1.0.6'
 
 end
