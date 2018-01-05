@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
     
     s.dependency 'Yodo1AdsConfig',      '1.0.0'
 
-    #Video
+    ##Video
     s.dependency 'VideoApplovin',       '2.0.1'
     s.dependency 'VideoCentrixlink',    '2.0.1'
     s.dependency 'VideoChance',         '2.0.1'
@@ -67,7 +67,7 @@ Pod::Spec.new do |s|
     s.dependency 'VideoISTapjoy',       '2.0.1'
     s.dependency 'VideoISVungle',       '2.0.1'
 
-    //Interstitial
+    ##Interstitial
     s.dependency 'InterstitialAdmob',       '2.0.1'
     s.dependency 'InterstitialAdview',      '2.0.1'
     s.dependency 'InterstitialApplovin',    '2.0.1'
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
     s.dependency 'InterstitialTapjoy',      '1.0.1'  
     s.dependency 'InterstitialWmad',        '2.0.1'
 
-    //Banner
+    ##Banner
     s.dependency 'BannerAdmob',         '2.0.1'
     s.dependency 'BannerAdview',        '1.0.1'
     s.dependency 'BannerApplovin',      '1.0.1'
