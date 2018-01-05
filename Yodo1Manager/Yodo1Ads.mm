@@ -13,7 +13,6 @@
 
 #import "Yodo1OnlineParameter.h"
 #import "Yodo1Analytics.h"
-#import "Yodo1AdConfigHelper.h"
 
 #ifdef YODO1_ADS_VIDEO
 #import "Yodo1AdVideoManager.h"
