@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'VideoISAppLovin'
-    s.version          = '2.0.2'
+    s.version          = '2.0.1'
     s.summary          = 'Applovin SDK 和 adapter 分离(更新Applovin 4.4.1)'
     s.description      = <<-DESC
     TODO: Add long description of the pod here.
