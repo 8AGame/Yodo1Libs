@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name             = 'Yodo1Manager'
-    s.version          = '2.0.3'
-    s.summary          = 'v2.0.3- 2018-1-4
+    s.version          = '2.0.1'
+    s.summary          = 'v2.0.1- 2018-1-4
                           1、更新到Github
                           '
     s.description      = <<-DESC
@@ -391,7 +391,7 @@ Pod::Spec.new do |s|
         ss.xcconfig = {
             "GCC_PREPROCESSOR_DEFINITIONS" => 'YODO1_ADS_VIDEO'
         }
-        ss.dependency 'VideoISApplovin','2.0.2'
+        ss.dependency 'VideoISAppLovin','2.0.1'
         ss.dependency 'Yodo1Video', Yodo1VideoVersion
         ss.dependency 'Yodo1Manager/Yodo1_Manager',versions
     end
